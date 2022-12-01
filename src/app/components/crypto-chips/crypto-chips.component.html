@@ -1,0 +1,9 @@
+<mat-card>
+  <mat-card-title>Crypto Chips</mat-card-title>
+  <mat-card-content>
+    <mat-list role="list" style="display:flex; flex-direction:row; flex-wrap:wrap; gap: 10px; text-align: center">
+      <mat-list-item  style='height: 20px; width: auto; background-color: lightgray; border-radius: 15px; font-size: 10px'
+                      role="listitem" *ngFor="let item of list$ | async">{{item.symbol}}</mat-list-item>
+    </mat-list>
+  </mat-card-content>
+</mat-card>

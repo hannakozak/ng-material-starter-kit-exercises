@@ -1,0 +1,10 @@
+<mat-card>
+  <mat-card-title></mat-card-title>
+  <mat-card-content>
+    <ng-container *ngIf="activity$ | async as item">
+      <h1>activity: {{item.activity}}</h1>
+      <p>type: {{item.type}}</p>
+      <p>participants: {{item.participants}}</p>
+    </ng-container>
+  </mat-card-content>
+</mat-card>
